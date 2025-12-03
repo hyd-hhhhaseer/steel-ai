@@ -14,7 +14,7 @@ def load_data_and_model():
     file_name = "钢型（数据清洗）.xlsx - Sheet1.csv"
     
     if os.path.exists(file_name):
-        df = pd.read_csv(file_name)
+        df = pd.read_csv("data.csv")
     else:
         # 如果还没上传CSV，生成演示数据避免报错
         st.warning("⚠️ 尚未检测到 CSV 数据文件，正在使用【演示模式】。请在 GitHub 上传 '钢型（数据清洗）.xlsx - Sheet1.csv'")
